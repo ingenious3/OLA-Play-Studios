@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme_gradient"
+    tools:context="com.example.ishant.olaplaystudios.views.MusicPlayerActivity">
+
+    <TextView
+        android:id="@+id/song_name_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/album_cover_image"
+        android:layout_margin="16dp"
+        android:textStyle="bold|italic"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:text="Title"
+        android:textColor="@color/blue"/>
+
+    <ImageView
+        android:id="@+id/album_cover_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:paddingLeft="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_ola_music"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/album_cover_image"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/play_pause_imageview"
+            android:layout_width="75dp"
+            android:layout_height="72dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/ic_play_button"
+            />
+
+        <ImageView
+            android:id="@+id/download_imageview"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_download_white"
+            android:background="@drawable/imageview_circular_background_large"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">OLA Play Studios</string>
+    <string name="no_internet">No Internet Connection!</string>
+    <string name="transition_logo">logo</string>
+    <string name="player_activity_name">Media player</string>
+
+    <string name="logo">Google logo</string>
+</resources>
